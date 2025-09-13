@@ -1,5 +1,3 @@
-/* Define el color de fondo personalizado */
 .bg-custom-green {
     background-color: #0f9d58 !important;
-    /* El !important puede ser necesario para sobrescribir las clases de Bootstrap */
 }
