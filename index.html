@@ -1,99 +1,293 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  <title>Pet Health — Página Prueba</title>
 
-    <link rel="stylesheet" href="styles.css">
+  <!-- Bootstrap 5.3 (igual versión que usas) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
-    <title>Página Prueba</title>
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
 
+  <!-- Tu CSS -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </head>
 <body>
 
-<nav class="navbar navbar-expand-sm navbar-dark bg-custom-green">
-  <div class="container">
-
-    <!-- Logo -->
-    <a class="navbar-brand" href="#">
-      <img src ="imagenes/logo1_transp.png" height="45" class="d-inline-block align-text-top">
-    </a>
-    <!-- Nombre de la veterinaria-->
-    <a class = "navbar-brand" href="">Pet Health</a>
-
-    <!-- Botón para colapsar el menú en pantallas pequeñas -->
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-
-        <li class="nav-item">
-          <!-- PONER LINK CORRESPONDIENTE -->
-          <a class="nav-link active" href="#">Sobre nosotros</a>  
-        </li>
-
-        <!-- PONER LINK CORRESPONDIENTE -->
-        <li class="nav-item">
-          <a class="nav-link active" href="#">Nuestros servicios</a>
-        </li>
-        
-        <!-- PONER LINK CORRESPONDIENTE -->
-        <li class="nav-item">
-          <a class="nav-link active" href="#">Contacto</a>
-        </li>
-      </ul>
-
-      <ul class = "navbar-nav nav-buttons">
-        <!-- PONER LINK CORRESPONDIENTE -->
-        <li class = "nav-item">
-          <a class = "btn btn-light me-sm-2 mb-2 mb-sm-0" href="#">Registrarse</a> 
-        </li>
-        <!-- PONER LINK CORRESPONDIENTE -->
-        <li class = "nav-item">
-          <a class = "btn btn-outline-light" href="#">Iniciar sesión</a>
-      </ul>
-    </div>    
-  </div>
-</nav>
-
-<!-- Contenedor imágen y texto-->
- <section class="hero-section">
-
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-sm navbar-dark bg-custom-green">
     <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+        <img src="imagenes/logo1_transp.png" height="45" alt="Logo Pet Health" class="d-inline-block align-text-top">
+        <span class="brand-text">Pet Health</span>
+      </a>
 
-      <div class="row align-items-center">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Alternar navegación">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-        <!-- Columna para la imagen0-->
-        <div class="col-md-6 mb-4 mb-md-0">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="#">Sobre nosotros</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Nuestros servicios</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+        </ul>
 
-          <img src="Imagenes/Captura_de_pantalla_2024-04-25_112959_1__1.png" class="img-fluid">
+        <ul class="navbar-nav d-flex align-items-center">
+          <li class="nav-item me-2"><a class="btn btn-light" href="#">Registrarse</a></li>
+          <li class="nav-item"><a class="btn btn-outline-light" href="#">Iniciar sesión</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO (tu código base, con corrección en texto) -->
+  <section class="hero-section py-5">
+    <div class="container">
+      <div class="row align-items-center gy-4">
+        <div class="col-md-6 text-center text-md-start">
+          <img src="Imagenes/Captura_de_pantalla_2024-04-25_112959_1__1.png" class="img-fluid hero-img" alt="Veterinaria y mascota">
         </div>
-        
-        <!-- Columna para la texto0-->
-         <div class="col-md-6 hero-text">
 
-          <h1 class="mb-4">Bienvenido a Pet Helth</h1>
-          <p class="lead mb-0">Cuidamos la salud y bienestar de tus mascotas en todo Costa Rica.</p>
-          <p class="lead mb-0">Con más de 15 años de experiencia, Pet Health es tu aliado de confianza en medicina veterinaria, cuidado preventivo y productos especializados.</p>
+        <div class="col-md-6 hero-text">
+          <h1 class="display-6 mb-3">Bienvenido a Pet Health</h1>
+          <p class="lead mb-2">Cuidamos la salud y bienestar de tus mascotas en todo Costa Rica.</p>
+          <p class="mb-0">Con más de 15 años de experiencia, Pet Health es tu aliado de confianza en medicina veterinaria, cuidado preventivo y productos especializados.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-         </div>
+  <!-- CONFIDENCE ROW -->
+  <section class="py-5 bg-white">
+    <div class="container">
+      <div class="row align-items-center gy-4">
+        <div class="col-lg-7">
+          <h2 class="h3 mb-3">Tu clínica de confianza para cada etapa de vida</h2>
+          <p class="text-muted mb-4">Somos un equipo de veterinarios y técnicos dedicados a brindar atención integral: consultas, cirugías, diagnóstico por imagen, laboratorio, grooming y guardería. Creemos en la medicina preventiva, el trato humano y la comunicación clara con cada familia.</p>
 
+          <div class="row g-3">
+            <div class="col-sm-4">
+              <div class="d-flex gap-3 align-items-start">
+                <div class="icon-box">
+                  <i class="bi bi-award-fill"></i>
+                </div>
+                <div>
+                  <strong>15+ años</strong>
+                  <div class="small text-muted">de experiencia</div>
+                </div>
+              </div>
+            </div>
 
+            <div class="col-sm-4">
+              <div class="d-flex gap-3 align-items-start">
+                <div class="icon-box">
+                  <i class="bi bi-people-fill"></i>
+                </div>
+                <div>
+                  <strong>Clínicos</strong>
+                  <div class="small text-muted">certificados</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-4">
+              <div class="d-flex gap-3 align-items-start">
+                <div class="icon-box">
+                  <i class="bi bi-lightning-charge-fill"></i>
+                </div>
+                <div>
+                  <strong>Urgencias</strong>
+                  <div class="small text-muted">24/7</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Imagen al lado derecho (perro) -->
+        <div class="col-lg-5 text-center text-lg-end">
+          <img src="/mnt/data/6ff22c0c-44fd-47a3-bc40-5a42b162b643.png" alt="Perro siendo atendido" class="img-fluid rounded-3 shadow-sm confidence-img">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NUESTROS SERVICIOS - Grid estilo tarjetas grandes -->
+  <section class="py-5">
+    <div class="container">
+      <h3 class="mb-4">Nuestros servicios de empresa</h3>
+
+      <div class="row g-3">
+        <!-- Cirugía (azul) -->
+        <div class="col-md-6 col-lg-4">
+          <article class="service-card surgery h-100 d-flex flex-column justify-content-between p-4 rounded-3 shadow-sm">
+            <div>
+              <h4>Cirugía</h4>
+              <p class="mb-3 small">Ofrecemos cirugías veterinarias seguras y compasivas, desde procedimientos de rutina hasta intervenciones especializadas. Contamos con anestesia monitorizada y equipo de recuperación moderno.</p>
+            </div>
+            <div class="d-flex justify-content-between align-items-center">
+              <a href="#" class="btn btn-sm btn-light">Leer más</a>
+              <i class="bi bi-scissors service-icon"></i>
+            </div>
+          </article>
+        </div>
+
+        <!-- Cuidado de la salud (morado) -->
+        <div class="col-md-6 col-lg-4">
+          <article class="service-card health h-100 d-flex flex-column justify-content-between p-4 rounded-3 shadow-sm">
+            <div>
+              <h4>Cuidado de la salud</h4>
+              <p class="mb-3 small">Cuidado integral: cheques preventivos, vacunación, desparasitación, odontología básica y asesoría nutricional. Planes personalizados según etapa de vida.</p>
+            </div>
+            <div class="d-flex justify-content-between align-items-center">
+              <a href="#" class="btn btn-sm btn-light">Leer más</a>
+              <i class="bi bi-file-medical service-icon"></i>
+            </div>
+          </article>
+        </div>
+
+        <!-- Aseo (pequeño) -->
+        <div class="col-md-6 col-lg-4">
+          <article class="service-card groom h-100 d-flex flex-column justify-content-between p-4 rounded-3 shadow-sm">
+            <div>
+              <h5>Aseo</h5>
+              <p class="mb-3 small">Baños y grooming profesional: corte de pelo por raza, cepillado, corte de uñas y limpieza de oídos. Productos hipoalergénicos y técnicas de baja estrés.</p>
+            </div>
+            <div class="d-flex justify-content-between align-items-center">
+              <a href="#" class="btn btn-sm btn-light">Leer más</a>
+              <i class="bi bi-droplet service-icon"></i>
+            </div>
+          </article>
+        </div>
+
+        <!-- Guardería (pequeño) -->
+        <div class="col-md-6 col-lg-4">
+          <article class="service-card daycare h-100 d-flex flex-column justify-content-between p-4 rounded-3 shadow-sm">
+            <div>
+              <h5>Guardería</h5>
+              <p class="mb-3 small">Guardería con supervisión profesional, áreas de juego seguras y socialización guiada. Programas diarios y reportes con fotos para tranquilidad de los dueños.</p>
+            </div>
+            <div class="d-flex justify-content-between align-items-center">
+              <a href="#" class="btn btn-sm btn-light">Leer más</a>
+              <i class="bi bi-house-door service-icon"></i>
+            </div>
+          </article>
+        </div>
+
+        <!-- Agendar una cita (naranja) -->
+        <div class="col-md-6 col-lg-8">
+          <article class="service-card booking h-100 d-flex flex-column justify-content-between p-4 rounded-3 shadow-sm">
+            <div>
+              <h4>Agendar una cita</h4>
+              <p class="mb-3 small">Agenda en minutos: elige servicio, fecha y hora. Recibe confirmación instantánea por WhatsApp o email. Horarios extendidos y opción de urgencias por teléfono.</p>
+            </div>
+            <div class="d-flex justify-content-between align-items-center">
+              <a href="#" class="btn btn-dark">Book Now</a>
+              <i class="bi bi-calendar-check service-icon"></i>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROMOCIONES DE SERVICIO -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center mb-3">
+        <h4 class="mb-0">Promociones de servicio</h4>
+        <a href="#" class="small">Ver todas</a>
       </div>
 
+      <div class="row g-3">
+        <!-- Promo 1 -->
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <div class="position-relative">
+              <img src="imagenes/promo_vacunas.jpg" class="card-img-top" alt="Plan de vacunas cachorro">
+              <span class="badge discount-badge">-20%</span>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Plan de vacunas cachorro</h5>
+              <p class="card-text small text-muted">Incluye consulta, 3 vacunas, desparasitación y control de crecimiento.</p>
+              <div class="d-flex justify-content-between align-items-center mt-3">
+                <div>
+                  <div class="price-old small text-muted text-decoration-line-through">$100</div>
+                  <div class="price-now fw-bold">$80</div>
+                </div>
+                <a href="#" class="btn btn-success btn-sm">Adquirir</a>
+              </div>
+            </div>
+          </div>
+        </div>
 
+        <!-- Promo 2 -->
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <div class="position-relative">
+              <img src="imagenes/promo_dental.jpg" class="card-img-top" alt="Profilaxis dental">
+              <span class="badge discount-badge bg-danger">-30%</span>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Profilaxis dental</h5>
+              <p class="card-text small text-muted">Limpieza con ultrasonido + revisión bucal para prevenir enfermedades.</p>
+              <div class="d-flex justify-content-between align-items-center mt-3">
+                <div>
+                  <div class="price-old small text-muted text-decoration-line-through">$100</div>
+                  <div class="price-now fw-bold">$70</div>
+                </div>
+                <a href="#" class="btn btn-success btn-sm">Adquirir</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Promo 3 -->
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <div class="position-relative">
+              <img src="imagenes/promo_bano.jpg" class="card-img-top" alt="Baño y corte de uñas">
+              <span class="badge discount-badge bg-primary">2x1</span>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Baño + corte de uñas</h5>
+              <p class="card-text small text-muted">Promoción de grooming para razas pequeñas y medianas.</p>
+              <div class="d-flex justify-content-between align-items-center mt-3">
+                <div>
+                  <div class="price-old small text-muted text-decoration-line-through">$40</div>
+                  <div class="price-now fw-bold">$25</div>
+                </div>
+                <a href="#" class="btn btn-success btn-sm">Adquirir</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> <!-- row -->
+    </div> <!-- container -->
+  </section>
+
+  <!-- FOOTER simple -->
+  <footer class="py-4 bg-custom-green text-white mt-5">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+      <div>© <span id="year"></span> Pet Health. Todos los derechos reservados.</div>
+      <div class="small">Dirección · Teléfono · Redes sociales</div>
     </div>
+  </footer>
 
-
- </section>
-  
-
+  <script>
+    // Insert current year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 
 </body>
 </html>
